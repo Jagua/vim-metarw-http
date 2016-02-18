@@ -1,0 +1,56 @@
+*metarw-http.txt*  metarw scheme: http(s)
+
+Version: 0.1.0
+Author: Jagua
+License: MIT License (http://opensource.org/licenses/mit-license.php)
+
+
+
+==============================================================================
+INTRODUCTION                                        *metarw-http-introduction*
+
+|metarw-http|(s) are schemes for |metarw| to read a url.
+
+
+Requirements:
+- Vim
+- |metarw|
+- |webapi|
+
+Latest version:
+https://github.com/Jagua/vim-metarw-http
+
+
+
+==============================================================================
+EXAMPLES                                                *metarw-http-examples*
+
+.vimrc
+
+>
+        " disable netrw
+        let g:loaded_netrw = 1
+        let g:loaded_netrwPlugin = 1
+        let g:loaded_netrwSettings = 1
+        let g:loaded_netrwFileHandlers = 1
+<
+
+
+read url with normal editing commands, such as
+
+>
+        edit https://github.com/Jagua/vim-metarw-http/commits/master.atom
+<
+
+
+
+==============================================================================
+CHANGELOG                                              *metarw-http-changelog*
+
+0.1.0  2016-02-19
+       - Initial version.
+
+
+
+==============================================================================
+vim:tw=78:ts=8:sw=2:ft=help:et:norl:fen:fdl=0:

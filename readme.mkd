@@ -1,0 +1,49 @@
+# vim-metarw-http
+
+**vim-metarw-http** is a Vim plugin to read url without netrw.
+
+This plugin depends on:
+
+* [vim-metarw](https://github.com/kana/vim-metarw)
+* [webapi-vim](https://github.com/mattn/webapi-vim)
+
+Latest: https://github.com/Jagua/vim-metarw-http
+
+
+
+## Install
+
+
+### A) vim-plug
+
+```vim
+Plug 'Jagua/vim-metarw-http'
+```
+
+
+### B) NeoBundle
+
+```vim
+NeoBundle 'Jagua/vim-metarw-http'
+```
+
+
+
+## Examples
+
+
+### .vimrc
+
+```vim
+" disable netrw
+let g:loaded_netrw = 1
+let g:loaded_netrwPlugin = 1
+let g:loaded_netrwSettings = 1
+let g:loaded_netrwFileHandlers = 1
+```
+
+### read url with normal editing commands, such as:
+
+```vim
+:edit https://github.com/Jagua/vim-metarw-http/commits/master.atom
+```
