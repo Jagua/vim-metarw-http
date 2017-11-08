@@ -16,8 +16,7 @@ function! metarw#http#read(fakepath) abort "{{{
   let url = a:fakepath
   let res = webapi#http#get(url)
   if res.status == '200'
-    put =res.content
-    return ['done', '']
+    return ['read', res.content]
   else
     return ['error', res.message]
   endif
