@@ -8,7 +8,7 @@ set cpo&vim
 
 
 function! metarw#http#complete(arglead, cmdline, cursorpos) abort "{{{
-  return ['done', '']
+  return [[], a:arglead, '']
 endfunction "}}}
 
 
